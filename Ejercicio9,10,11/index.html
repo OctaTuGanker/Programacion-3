@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejercicios DOM</title>
+</head>
+<body>
+
+  <h1 id="titulo">Hola Mundo</h1>
+  
+  <button onclick="cambiarTexto()">Cambiar texto</button>
+
+  <button onclick="cambiarEstilo()">Cambiar estilo</button>
+
+  <button onclick="creaDiv()">Crear div</button>
+
+  <script>
+    // Ejercicio 9
+    function cambiarTexto() {
+      document.getElementById("titulo").textContent = "Hola Mundo con Javascript";
+    }
+
+    // Ejercicio 10
+    function cambiarEstilo() {
+      const titulo = document.getElementById("titulo");
+      titulo.style.color = "red";
+      titulo.style.textAlign = "center";
+    }
+
+    // Ejercicio 11
+    function creaDiv() {
+      const nuevoDiv = document.createElement("div");
+      nuevoDiv.textContent = "Javascript permite crear páginas dinámicas";
+      nuevoDiv.style.color = "white";
+      nuevoDiv.style.backgroundColor = "red";
+      nuevoDiv.style.textAlign = "center";
+      nuevoDiv.style.padding = "10px";
+      nuevoDiv.style.marginTop = "10px";
+
+      document.body.appendChild(nuevoDiv);
+    }
+  </script>
+
+</body>
+</html>
+  <!-- Escribir start index.html o hacer doble click desde el archivo -->
